@@ -7,28 +7,43 @@ body {
 h1 {
   font-family: 'Zilla Slab', sans-serif;
   font-size:500%;
+  display: inline;
+  width: 40%;
+  margin: 2%;
+  line-height: 3em;
+  background-color: #46bcfc;
 }
 
 nav {
+  position: relative;
   display: block;
   height: 40%;
   width: 30%;
   background-color: #46bcfc;
 }
 
-nav li {
+ul li {
   display: none;
 }
 
-nav li: hover {
+nav:hover {
   display: block;
+  color: white;
 }
 
 section {
   height: 40%;
   width: 100%;
+  background-color: black;
+  color: white;
 }
 
 img {
   max-width: 100%;
+}
+
+/*CLASSES*/
+.glass {
+  background-image: url('/imgs/glass.jpg');
+  background-size: cover;
 }
