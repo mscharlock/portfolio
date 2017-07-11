@@ -22,6 +22,7 @@ nav {
   background-color: #46bcfc;
 }
 
+/*Note: I'm trying to get the lis to show up when you hover as in a drop down from the blue box*/
 ul li {
   display: none;
 }
@@ -46,4 +47,8 @@ img {
 .glass {
   background-image: url('/imgs/glass.jpg');
   background-size: cover;
+}
+
+.resume {
+  background-color: red; 
 }
