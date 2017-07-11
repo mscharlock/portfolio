@@ -1,3 +1,34 @@
+body {
+  background-color: white;
+  font: sans-serif;
+  font-size: 13px;
+}
+
+h1 {
+  font-family: 'Zilla Slab', sans-serif;
+  font-size:500%;
+}
+
+nav {
+  display: block;
+  height: 40%;
+  width: 30%;
+  background-color: #46bcfc;
+}
+
+nav li {
+  display: none;
+}
+
+nav li: hover {
+  display: block;
+}
+
+section {
+  height: 40%;
+  width: 100%;
+}
+
 img {
-  max-width: 100%; 
+  max-width: 100%;
 }
