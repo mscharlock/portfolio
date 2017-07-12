@@ -2,7 +2,7 @@
 $(document).ready(function(){
   var projects = [];
 
-  function createProject(rawProject) {
+  function Project(rawProject) {
     this.title = rawProject.title;
     this.description = rawProject.description;
     this.date = rawProject.date;
@@ -10,7 +10,7 @@ $(document).ready(function(){
     this.langs = rawProject.langs;
   }
 
-  createProject.prototype.toHtml = function() {
+  Project.prototype.toHtml = function() {
     var $newProject = $('projects.template').clone();
     $newProject.data('title', this.title);
     $newProject.data('description', this.description);
@@ -21,23 +21,17 @@ $(document).ready(function(){
 
     return $newProject;
   }
-  listofProjects.forEach(function(articleObject) {
-    projects.push(new Project(articleObject));
+
+  listofProjects.forEach(function(projectObj) {
+    projects.push(new Project(projectObj));
   })
 
-articles.forEach(function(article) {
-  $('#articles').append(article.toHtml());
-});
-
+  listofProjects.forEach(function(project) {
+    $('#projects').append(project.toHtml());
+  })
 })
-  /* TODO: This cloned article still has a class of template.
-  However, in our modules.css stylesheet, we gave all elements
-  with a class of template a display of none. Let's make
-  sure we're not accidentally hiding our cloned article! */
 
 
-//JQuery
-$(document).ready(function(){
-  //JQuery functionality to go here//
-  $('nav').hide();
-});
+  // FROM LAB:
+  // articles.forEach(function(article) {
+  // $('#articles').append(article.toHtml());
