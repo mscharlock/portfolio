@@ -8,7 +8,9 @@
   - **extra** Make projects have a timestamp
 - Make CSS look less ugly
 - Implement hamburger menu from yesterday
-- Refactor CSS so it's got multiple layers
+  >>I tried to do this and it's being totally annoying
+
+- Refactor CSS so it's got multiple layers DONE
 - Work on media queries so it's not so stupid looking
   - for tablet
   - for mobile
