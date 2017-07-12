@@ -1,6 +1,6 @@
 /*CLASSES*/
 .glass {
-  background-image: url('/imgs/glass.jpg');
+  background-image: url('file:///C:/Users/Michelle/codefellows/301/portfolio/imgs/glass.jpg');
   background-size: cover;
 }
 
@@ -11,6 +11,10 @@
 
 .portfolio {
   background-color: black;
+}
+
+.template {
+  display: none;
 }
 
 .resume {
