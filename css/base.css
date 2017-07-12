@@ -44,15 +44,7 @@ img {
   max-width: 100%;
 }
 
-/*CLASSES*/
-.glass {
-  background-image: url('/imgs/glass.jpg');
-  background-size: cover;
-}
 
-.resume {
-  background-color: red;
-}
 
 
 /*MEDIA QUERY FOR DESKTOP*/

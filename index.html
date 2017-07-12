@@ -3,18 +3,21 @@
 <head>
   <title>Michelle Scharlock's Portfolio</title>
   <meta charset="utf-8">
+  <script src="https://use.fontawesome.com/253aef336c.js"></script>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylelsheet" href="./css/module.css">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
 </head>
 
 <body>
-  <main>
+  <header>
     <section class="glass">
       <h1>Michelle Scharlock...</h1>
       <nav>
-        <i><!--drop down arrow image TBD--></i>
+        <i class="fa fa-angle-double-down fa-3x down-arrow" aria-hidden="true"></i>
         <ul>
           <li> develops for web/mobile</li>
           <li> creates web applications</li>
@@ -25,51 +28,64 @@
           <li> is easy to reach</li>
           <li> blogs</li>
         </nav>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <p></p>
-      <p></p>
-      <p></p>
-    </section>
-    <section class="portfolio">
-      <h2>Portfolio<h2>
-        <p></p>
-        <!--some kind of slider here-->
-    </section>
-    <section class="resume">
-      <h2>Resume<h2>
-        <!--link here to resume-->
-    </section>
-    <section class="accomps">
-      <h3>Accomplishments</h3>
-      <p></p>
-      <!--some kind of slider here-->
-    </section>
-    <section class="langs">
-      <h3>Languages</h3>
-      <ul>
-        <li>English</li>
-        <li>French</li>
-        <li>German</li>
-        <li>Italian</li>
-      </ul>
-    </section>
-    <section class="vol">
-      <h4>Volunteering</h4>
-        <p></p>
-    </section>
-    <section class="contact">
-      <h4>Contact</h4>
-      <p>Phone: 425.956.4966</p>
-      <p>Email: michelle.scharlock@gmail.com</p>
-      <a href="https://www.linkedin.com/in/mscharlock/">LinkedIn</a> <!--might replace with an icon-->
-      <a href="https://github.com/mscharlock">Github</a> <!--might replace with an icon-->
-      <p>Skype: mscharlock</p>
-      <p>Snail Mail and/or Courrier Pigeon: 3130 213th PL SE, Sammamish, WA 98075</p>
-    </section>
-  </main>
-  <script src="app.js"></script>
-</body>
+      </header>
+      <main>
+        <section class="skills">
+          <h2>Skills</h2>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+        </section>
+        <section class="portfolio">
+          <h2>Portfolio<h2>
+            <!--Note to self: Ask about how to format this tomorrow, it's a little confusing-->
+            <section id="projects">
+                 <article class="template">
+                   <h3>Project Name Here</h3>
+                   <p>Yay more project information</p>
+                 </article>
+            </section>
+          </section>
+          <section class="resume">
+            <h2>Resume<h2>
+              <p>Previous to joining Code Fellows, I spent several years working in PR and marketing. Most recently, I served as the Communications Manager at the Ronald McDonald House of Western Washington and Alaska. After working mostly for nonprofit organizations, I also worked briefly promoting SQL Server and other Microsoft big data products with a job at Waggener Edstrom in 2015, which made me realize how much I love tech! </p>
+              <a href="https://www.linkedin.com/in/mscharlock/">View on LinkedIn </a>
+            </section>
+            <section class="accomps">
+              <h3>Accomplishments</h3>
+              <p>I'm driven to acheive results - but don't take my word for it!<p>
+              <!--some kind of slider here? Or dynamically use jQ to animate/hide/etc? This will be some kind of press clippings/sizzle thing-->
+            </section>
+            <section class="langs">
+              <h3>Languages</h3>
+              <p>English major, meet technical talk. Thanks to Code Fellows, I grok dev-speak, but I can easily translate complex technical issues for those who don't. In addition to HTML, CSS, Javascript, and basic SQL, I has working knowledge of several languages, including:</p>
+              <ul>
+                <li>English - fluent, native speaker</li>
+                <li>French - 5 years academic study, 4 years living in Montreal</li>
+                <li>German - B2 level proficiency, as assessed by the Freie Universitat</li>
+                <li>Italian - 2 years study and studied abroad in Florence</li>
+              </ul>
+            </section>
+            <section class="vol">
+              <h4>Volunteering</h4>
+              <p>Michelle is passionate about making a difference in the community around her, as evidenced by her strong passion for nonprofit work and steady stream of volunteer work! Most recently, she helped with the Tech Crunch Pitch Off competition in Seattle. She volunteers regularly as an usher with many theaters in town. Additionally, she has donated hundreds of hours of time in PR and marketing services to the Metropolitan Opera National Council Northwest and the Fisher Ensemble, a modern opera company. When she has the time, she also enjoys volunteering as "minion" at Emerald City Comicon.</p>
+            </section>
+            <section class="contact">
+              <h4>Contact</h4>
+              <p>Phone: 425.956.4966</p>
+              <p>Email: michelle.scharlock@gmail.com</p>
+              <a href="https://www.linkedin.com/in/mscharlock/">LinkedIn</a> <!--might replace with an icon-->
+              <a href="https://github.com/mscharlock">Github</a> <!--might replace with an icon-->
+              <p>Skype: mscharlock</p>
+              <p>Snail Mail and/or Courrier Pigeon: 3130 213th PL SE, Sammamish, WA 98075</p>
+            </section>
+          </main>
+          <footer>
+            <p> &copy; Michelle Scharlock, 2017
+          </footer>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="raw-articles.js"></script>
+          <script src="js/app.js"></script>
+        </body>
 
-</html>
+        </html>

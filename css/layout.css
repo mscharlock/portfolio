@@ -1,0 +1,38 @@
+/*CLASSES*/
+.glass {
+  background-image: url('/imgs/glass.jpg');
+  background-size: cover;
+}
+
+.skills {
+  display: none;
+  background-color: orange;
+}
+
+.portfolio {
+  background-color: black;
+}
+
+.resume {
+  display: none;
+  background-color: orange;
+}
+
+.accomps {
+  display: none;
+  background-color: black;
+}
+
+.langs {
+  display: none;
+  background-color: orange;
+}
+
+.vol {
+  display: none;
+  background-color: black;
+}
+
+.contact {
+  background-color: orange;
+}
