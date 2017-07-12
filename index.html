@@ -3,18 +3,21 @@
 <head>
   <title>Michelle Scharlock's Portfolio</title>
   <meta charset="utf-8">
+  <script src="https://use.fontawesome.com/253aef336c.js"></script>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylelsheet" href="./css/module.css">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
 </head>
 
 <body>
-  <main>
+  <header>
     <section class="glass">
       <h1>Michelle Scharlock...</h1>
       <nav>
-        <i><!--drop down arrow image TBD--></i>
+        <i class="fa fa-angle-double-down fa-3x down-arrow" aria-hidden="true"></i>
         <ul>
           <li> develops for web/mobile</li>
           <li> creates web applications</li>
@@ -25,51 +28,56 @@
           <li> is easy to reach</li>
           <li> blogs</li>
         </nav>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <p></p>
-      <p></p>
-      <p></p>
-    </section>
-    <section class="portfolio">
-      <h2>Portfolio<h2>
-        <p></p>
-        <!--some kind of slider here-->
-    </section>
-    <section class="resume">
-      <h2>Resume<h2>
-        <!--link here to resume-->
-    </section>
-    <section class="accomps">
-      <h3>Accomplishments</h3>
-      <p></p>
-      <!--some kind of slider here-->
-    </section>
-    <section class="langs">
-      <h3>Languages</h3>
-      <ul>
-        <li>English</li>
-        <li>French</li>
-        <li>German</li>
-        <li>Italian</li>
-      </ul>
-    </section>
-    <section class="vol">
-      <h4>Volunteering</h4>
-        <p></p>
-    </section>
-    <section class="contact">
-      <h4>Contact</h4>
-      <p>Phone: 425.956.4966</p>
-      <p>Email: michelle.scharlock@gmail.com</p>
-      <a href="https://www.linkedin.com/in/mscharlock/">LinkedIn</a> <!--might replace with an icon-->
-      <a href="https://github.com/mscharlock">Github</a> <!--might replace with an icon-->
-      <p>Skype: mscharlock</p>
-      <p>Snail Mail and/or Courrier Pigeon: 3130 213th PL SE, Sammamish, WA 98075</p>
-    </section>
-  </main>
-  <script src="app.js"></script>
-</body>
+      </header>
+      <main>
+        <section>
+          <h2>Skills</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section class="portfolio">
+          <h2>Portfolio<h2>
+            <div>
+              <!--jQ to insert stuff here-->
+            </div>
+          </section>
+          <section class="resume">
+            <h2>Resume<h2>
+              <!--link here to resume-->
+            </section>
+            <section class="accomps">
+              <h3>Accomplishments</h3>
+              <p></p>
+              <!--some kind of slider here? Or dynamically use jQ to animate/hide/etc?-->
+            </section>
+            <section class="langs">
+              <h3>Languages</h3>
+              <ul>
+                <li>English</li>
+                <li>French</li>
+                <li>German</li>
+                <li>Italian</li>
+              </ul>
+            </section>
+            <section class="vol">
+              <h4>Volunteering</h4>
+              <p></p>
+            </section>
+            <section class="contact">
+              <h4>Contact</h4>
+              <p>Phone: 425.956.4966</p>
+              <p>Email: michelle.scharlock@gmail.com</p>
+              <a href="https://www.linkedin.com/in/mscharlock/">LinkedIn</a> <!--might replace with an icon-->
+              <a href="https://github.com/mscharlock">Github</a> <!--might replace with an icon-->
+              <p>Skype: mscharlock</p>
+              <p>Snail Mail and/or Courrier Pigeon: 3130 213th PL SE, Sammamish, WA 98075</p>
+            </section>
+          </main>
+          <footer>
+            <p> &copy; Michelle Scharlock, 2017
+          </footer>
+          <script src="app.js"></script>
+        </body>
 
-</html>
+        </html>
