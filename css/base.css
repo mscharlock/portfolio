@@ -23,14 +23,14 @@ nav {
 }
 
 /*Note: I'm trying to get the lis to show up when you hover as in a drop down from the blue box*/
-ul li {
+/*ul li {
   display: none;
 }
 
 nav:hover {
   display: block;
   color: white;
-}
+}*/
 
 section {
   padding-bottom: 75%;
