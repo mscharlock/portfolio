@@ -1,10 +1,11 @@
 #Tasks
 ## Today's assignments:
-- Make home/about tabs show/hide content
-- Auto hide content when the page loads
+- Make home/about tabs show/hide content - WORKING ON THIS
+- Auto hide content when the page loads - DONE
 - Filterable by language
 - Make CSS look less ugly
-- Implement hamburger menu from yesterday
+  -Style the links in the nav so they are less stupid looking
+- Implement hamburger menu from yesterday - kinda did this?? Check if the >> will work
 - Work on media queries so it's not so stupid looking
   - for tablet
   - for mobile
