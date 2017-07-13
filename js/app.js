@@ -1,3 +1,4 @@
+//This file puts all of my projects on the DOM//
 'use strict';
 var projects = [];
 
