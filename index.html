@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <script src="https://use.fontawesome.com/253aef336c.js"></script>
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylelsheet" href="./css/module.css">
-  <meta name="viewport" content="width=device-width, initial scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
 </head>
 
@@ -19,14 +20,14 @@
       <nav>
         <i class="fa fa-angle-double-down fa-3x down-arrow" aria-hidden="true"></i>
         <ul>
-          <li> develops for web/mobile</li>
-          <li> creates web applications</li>
-          <li> gets things done</li>
-          <li> focuses on ROI</li>
-          <li> translates your message</li>
-          <li> volunteers</li>
-          <li> is easy to reach</li>
-          <li> blogs</li>
+          <li class="navTab" data-goto="toSkills"><a href='#'> develops for web/mobile</a></li>
+          <li class="navTab" data-goto="toPortfolio"><a href='#'>  creates web applications</a></li>
+          <li class="navTab" data-goto="toResume"><a href='#'>  gets things done</a></li>
+          <li class="navTab" data-goto="toAccomps"><a href='#'>  focuses on ROI</a></li>
+          <li class="navTab" data-goto="toLangs"><a href='#'>  translates your message</a></li>
+          <li class="navTab" data-goto="toVol"><a href='#'>  volunteers</a></li>
+          <li class="navTab" data-goto="toContact"><a href='#'>  is easy to reach</a></li>
+          <li class="navTab"><a href='#'>  blogs</a></li>
         </nav>
       </header>
       <main>
@@ -36,27 +37,27 @@
           <p>CSS</p>
           <p>Javascript</p>
         </section>
-        <section class="portfolio">
+        <section id="toPortfolio" data-hide="hideData">
           <h2>Portfolio<h2>
-            <!--Note to self: Ask about how to format this tomorrow, it's a little confusing-->
-            <section id="projects">
-                 <article class="template">
-                   <h3>Project Name Here</h3>
-                   <p>Yay more project information</p>
-                 </article>
-            </section>
+            <article class="template">
+              <h3>Project Name Here</h3>
+              <p class="description">Yay more project information</p>
+              <p class="date">Created on</p>
+              <p class="inClass"></p>
+              <p class="langs"></p>
+            </article>
           </section>
-          <section class="resume">
+          <section id="toResume" data-hide="hideData">
             <h2>Resume<h2>
               <p>Previous to joining Code Fellows, I spent several years working in PR and marketing. Most recently, I served as the Communications Manager at the Ronald McDonald House of Western Washington and Alaska. After working mostly for nonprofit organizations, I also worked briefly promoting SQL Server and other Microsoft big data products with a job at Waggener Edstrom in 2015, which made me realize how much I love tech! </p>
               <a href="https://www.linkedin.com/in/mscharlock/">View on LinkedIn </a>
             </section>
-            <section class="accomps">
+            <section id="toAccomps" data-hide="hideData">
               <h3>Accomplishments</h3>
               <p>I'm driven to acheive results - but don't take my word for it!<p>
               <!--some kind of slider here? Or dynamically use jQ to animate/hide/etc? This will be some kind of press clippings/sizzle thing-->
             </section>
-            <section class="langs">
+            <section id="toLangs" data-hide="hideData">
               <h3>Languages</h3>
               <p>English major, meet technical talk. Thanks to Code Fellows, I grok dev-speak, but I can easily translate complex technical issues for those who don't. In addition to HTML, CSS, Javascript, and basic SQL, I has working knowledge of several languages, including:</p>
               <ul>
@@ -66,11 +67,11 @@
                 <li>Italian - 2 years study and studied abroad in Florence</li>
               </ul>
             </section>
-            <section class="vol">
+            <section id="toVol" data-hide="hideData">
               <h4>Volunteering</h4>
               <p>Michelle is passionate about making a difference in the community around her, as evidenced by her strong passion for nonprofit work and steady stream of volunteer work! Most recently, she helped with the Tech Crunch Pitch Off competition in Seattle. She volunteers regularly as an usher with many theaters in town. Additionally, she has donated hundreds of hours of time in PR and marketing services to the Metropolitan Opera National Council Northwest and the Fisher Ensemble, a modern opera company. When she has the time, she also enjoys volunteering as "minion" at Emerald City Comicon.</p>
             </section>
-            <section class="contact">
+            <section id="toContact" data-hide="hideData">
               <h4>Contact</h4>
               <p>Phone: 425.956.4966</p>
               <p>Email: michelle.scharlock@gmail.com</p>
@@ -81,11 +82,12 @@
             </section>
           </main>
           <footer>
-            <p> &copy; Michelle Scharlock, 2017
+            <p> &copy; Michelle Scharlock, 2017 </p>
           </footer>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <script src="raw-articles.js"></script>
+          <script src="js/raw-articles.js"></script>
           <script src="js/app.js"></script>
+          <script src="js/hide-show.js"></script>
         </body>
 
         </html>

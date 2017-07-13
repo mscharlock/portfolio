@@ -17,25 +17,22 @@ h1 {
 
 nav {
   display: block;
-  height: 40%;
-  width: 30%;
+  width: 20em;
+  height: 10em;
   background-color: #46bcfc;
 }
 
-/*Note: I'm trying to get the lis to show up when you hover as in a drop down from the blue box*/
-ul li {
-  display: none;
-}
-
-nav:hover {
-  display: block;
-  color: white;
+nav ul li {
+  width: 8em;
+  height: 10em;
+  background-color: #46bcfc;
+  font-size: 200%;
+  list-style: none;
+  padding: 1em;
 }
 
 section {
-  padding-bottom: 75%;
-  height: 10%;
-  width: 100%;
+  padding: 1em;
   background-color: black;
   color: white;
 }
