@@ -5,7 +5,6 @@
 }
 
 .skills {
-  display: none;
   background-color: orange;
 }
 
@@ -18,22 +17,18 @@
 }
 
 .resume {
-  display: none;
   background-color: orange;
 }
 
 .accomps {
-  display: none;
   background-color: black;
 }
 
 .langs {
-  display: none;
   background-color: orange;
 }
 
 .vol {
-  display: none;
   background-color: black;
 }
 
