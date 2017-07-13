@@ -37,7 +37,7 @@
           <p>CSS</p>
           <p>Javascript</p>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" data-hide='on-load'>
           <h2>Portfolio<h2>
             <section id="projects">
                  <article class="template">
@@ -49,17 +49,17 @@
                  </article>
             </section>
           </section>
-          <section class="resume">
+          <section class="resume" data-hide="on-load">
             <h2>Resume<h2>
               <p>Previous to joining Code Fellows, I spent several years working in PR and marketing. Most recently, I served as the Communications Manager at the Ronald McDonald House of Western Washington and Alaska. After working mostly for nonprofit organizations, I also worked briefly promoting SQL Server and other Microsoft big data products with a job at Waggener Edstrom in 2015, which made me realize how much I love tech! </p>
               <a href="https://www.linkedin.com/in/mscharlock/">View on LinkedIn </a>
             </section>
-            <section class="accomps">
+            <section class="accomps" data-hide="on-load">
               <h3>Accomplishments</h3>
               <p>I'm driven to acheive results - but don't take my word for it!<p>
               <!--some kind of slider here? Or dynamically use jQ to animate/hide/etc? This will be some kind of press clippings/sizzle thing-->
             </section>
-            <section class="langs">
+            <section class="langs" data-hide="on-load">
               <h3>Languages</h3>
               <p>English major, meet technical talk. Thanks to Code Fellows, I grok dev-speak, but I can easily translate complex technical issues for those who don't. In addition to HTML, CSS, Javascript, and basic SQL, I has working knowledge of several languages, including:</p>
               <ul>
@@ -69,11 +69,11 @@
                 <li>Italian - 2 years study and studied abroad in Florence</li>
               </ul>
             </section>
-            <section class="vol">
+            <section class="vol" data-hide="on-load">
               <h4>Volunteering</h4>
               <p>Michelle is passionate about making a difference in the community around her, as evidenced by her strong passion for nonprofit work and steady stream of volunteer work! Most recently, she helped with the Tech Crunch Pitch Off competition in Seattle. She volunteers regularly as an usher with many theaters in town. Additionally, she has donated hundreds of hours of time in PR and marketing services to the Metropolitan Opera National Council Northwest and the Fisher Ensemble, a modern opera company. When she has the time, she also enjoys volunteering as "minion" at Emerald City Comicon.</p>
             </section>
-            <section class="contact">
+            <section class="contact" data-hide="on-load">
               <h4>Contact</h4>
               <p>Phone: 425.956.4966</p>
               <p>Email: michelle.scharlock@gmail.com</p>
@@ -84,11 +84,12 @@
             </section>
           </main>
           <footer>
-            <p> &copy; Michelle Scharlock, 2017
+            <p> &copy; Michelle Scharlock, 2017 </p>
           </footer>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           <script src="js/raw-articles.js"></script>
           <script src="js/app.js"></script>
+          <script src="js/hide-show.js"></script>
         </body>
 
         </html>
