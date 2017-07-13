@@ -1,3 +1,4 @@
+//This file just lists all of the projects//
 'use-strict';
 
 var listOfProjects = [
