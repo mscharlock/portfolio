@@ -3,14 +3,18 @@
 <head>
   <title>Michelle Scharlock's Portfolio</title>
   <meta charset="utf-8">
-  <script src="https://use.fontawesome.com/253aef336c.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/skeleton.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylelsheet" href="./css/module.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+  <script src="https://use.fontawesome.com/253aef336c.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.amd.js"></script>
+  <script type="text/template" id="project-template">
+      <p>This is a {{#each title}} and here is a {{#each description}} and it was completed on {{#each date}} and I made it in {{#each inClass}} and I used these languages: {{#each langs}}<p>
+  </script>
 </head>
 
 <body>
@@ -39,13 +43,16 @@
         </section>
         <section id="toPortfolio" data-hide="hideData">
           <h2>Portfolio<h2>
-            <article class="template">
+            <div id="dynamicHandlebarsInfo"></div>
+
+
+            <!-- <article class="template">
               <h3>Project Name Here</h3>
               <p class="description">Yay more project information</p>
               <p class="date">Created on</p>
               <p class="inClass"></p>
               <p class="langs"></p>
-            </article>
+            </article> -->
           </section>
           <section id="toResume" data-hide="hideData">
             <h2>Resume<h2>

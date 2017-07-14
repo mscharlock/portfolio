@@ -6,17 +6,33 @@ var viewPage = {};
 
 //Some methods to hide/show//
 viewPage.hideSections = function() {
-  $('section[data-hide="hideData"]').hide();
-  $('nav li').hide();
+  $('section').hide();
+  $('.template').hide();
+  $('.glass').fadeIn();
+  $('.navTab').hide();
+  $('.skills').fadeIn();
 }
 
 viewPage.openNav = function() {
   $('nav').on('click', function() {
-    $('nav li').show();
-    $('#' + $(this).attr('data-goTo')).show();
-    $('nav li').hide();
+    $('.navTab').show()
+  })}
+
+viewPage.liGo = function() {
+  $('ul').on('click', 'li', function(e) {
+    e.stopPropagation();
+    console.log($(this));
+    viewPage.hideSections();
+    $('#' + $(this).data('goto')).css('display', 'initial');
+    $('.template').hide();
   })
 }
+  //
+  // } 'li', function() {
+  //   $('nav li').slideToggle();
+  //   // $('#' + $(this).show();
+    // $('nav li').hide();
+
 
     // $('nav li').show();
     // $('nav li:nth-child(1)').find('#'). //something here about selecting the right li and then replacing the # with the right class? Or maybe I need to rethink that bit
@@ -34,5 +50,6 @@ viewPage.openNav = function() {
 $(document).ready(function(){
   viewPage.hideSections();
   viewPage.openNav();
+  viewPage.liGo();
   // viewPage.selectLink();
 })
