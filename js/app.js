@@ -34,3 +34,4 @@ var context = {
 
 
 $('#dynamicHandlebarsInfo').html(showProjects(context));
+//is it not showing because of all of my wonky hide/show settings? Ask Brandon tomorrow
