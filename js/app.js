@@ -1,5 +1,5 @@
 //This file puts all of my projects on the DOM//
-'use strict';
+'use strict'
 //grab it
 var template = $('#project-template').html();
 
