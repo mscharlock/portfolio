@@ -11,9 +11,12 @@
   <link rel="stylelsheet" href="./css/module.css">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
   <script src="https://use.fontawesome.com/253aef336c.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.amd.js"></script>
-  <script type="text/template" id="project-template">
-      <p>This is a {{#each title}} and here is a {{#each description}} and it was completed on {{#each date}} and I made it in {{#each inClass}} and I used these languages: {{#each langs}}<p>
+  <script src="
+https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
+  <script type="text/x-handlebars-template" id="project-template">
+      <p>This is a {{#each title}} and here is a {{#each description}} and it was completed on {{#each date}} and I made it in {{#each inClass}} and I used these languages: {{#each langs}}</p>
+      <p>{{title}}</p>
+      <p>{{{title}}}</p>
   </script>
 </head>
 
@@ -92,7 +95,7 @@
             <p> &copy; Michelle Scharlock, 2017 </p>
           </footer>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <script src="js/raw-articles.js"></script>
+          <!-- <script src="js/raw-articles.js"></script> -->
           <script src="js/app.js"></script>
           <script src="js/hide-show.js"></script>
         </body>
