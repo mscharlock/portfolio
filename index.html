@@ -16,12 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Special+Elite|Varela+Round" rel="stylesheet">
   <script src="https://use.fontawesome.com/253aef336c.js"></script>
 
-  <!--Handlebars CDN and template-->
+  <!--Handlebars CDN and templates-->
   <script src="
 https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
   <script type="text/x-handlebars-template" id="project-template">
     {{#each projects}}
-      <p>This is a {{title}} and here is a {{#each description}} and it was completed on {{#each date}} and I made it in {{#each inClass}} and I used these languages: {{#each langs}}</p>
+      <p>This is a {{title}} and here is a {{description}} and it was completed on {{date}} and I made it in {{inClass}} and I used these languages: {{langs}}</p>
       <p>{{title}}</p>
       <p>{{{title}}}</p>
     {{/each}}
