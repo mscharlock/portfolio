@@ -1,12 +1,7 @@
-//This file puts all of my projects on the DOM//
+//This file appends all of my projects on the DOM//
 'use strict'
-//grab it
-var template = $('#project-template').html();
 
-//compile
-var showProjects = Handlebars.compile(template);
-
-//set the context we'll pull from
+//Projects data//
 var context = {
   projects: [
     {
@@ -30,8 +25,9 @@ var context = {
     }
   ]
 };
-//context is working: console.log('context', context)
 
-
-$('#dynamicHandlebarsInfo').html(showProjects(context));
+//Using handlebars to grab/compile/append
+var template = $('#project-template').html();
+var showProjects = Handlebars.compile(template);
+$('#dynamicHandlebarsInfo').append(showProjects(context));
 //is it not showing because of all of my wonky hide/show settings? Ask Brandon tomorrow. Because on-load they are briefly showing, then hiding???
