@@ -26,10 +26,10 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
       <p>{{{title}}}</p>
     {{/each}}
   </script>
-  <script type="text/x-handlebars-template" id="quotes">
+  <script type="text/x-handlebars-template" id="quoteTemplate">
     {{#each quotes}}
-      <p>{{text}}</p>
-      <p>- {{author}</p>}
+      <p>{{{text}}}</p>
+      <p>- {{{author}}}</p>}
     {{/each}}
   </script>
 </head>
@@ -37,9 +37,10 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
 <body>
   <header>
     <section class="texture">
-      <i id="pickMe" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+
       <h1>Michelle Scharlock</h1>
       <nav>
+        <i id="pickMe" class="fa fa-bars fa-lg" aria-hidden="true"></i>
         <ul>
           <li class="navTab" data-goto="toSkills"><a href='#'> Skills</a></li>
           <li class="navTab" data-goto="toPortfolio"><a href='#'>  Portfolio</a></li>
@@ -84,7 +85,7 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
             <section id="toAccomps" data-hide="hideData">
               <h3>Accomplishments</h3>
               <p>I'm driven to acheive results - but don't take my word for it!<p>
-                <div id="quotesHere"></div>
+              <div id="quotesHere"></div>
 
 
               <!--some kind of slider here? Or dynamically use jQ to animate/hide/etc? This will be some kind of press clippings/sizzle thing-->

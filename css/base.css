@@ -12,11 +12,11 @@ html {
 
 body {
   background-color: white;
-  /*text-align: center;*/
+  text-align: center;
   font-family: 'Varela Round', sans-serif;
   font-weight: 400;
   line-height: 1.45;
-  color: white;
+  color: black;
 }
 
 HEADINGS*/
@@ -28,11 +28,12 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family: 'Special Elite', cursive;
-  text-align: center;
+  text-align: left;
   width: 100%;
   font-size: 3.998em;
   margin: 0 auto;
   line-height: 1.4em;
+  display: inline-block;
   color: black;
   text-shadow: 0.1em 0.06em 0.1em teal;
 }
@@ -51,9 +52,9 @@ h4 {
 
 /*NAV STYLING*/
 nav {
-  display: block;
   color: black;
   width: 100%;
+  text-align: center;
   /*background-color: rgba(63, 65, 181, 0.74);*/
   text-shadow: 0.08em 0.05em 0.4em black;
 }
@@ -63,11 +64,10 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
-  text-align: center;
+  display: block;
+  text-align: left;
   list-style: none;
   font-size: 1em;
-  padding: 1em;
 }
 
 nav a {
@@ -92,6 +92,8 @@ footer {
 
 p {
   margin-bottom: 1.3em;
+  font-size: 1em;
+  font-family: 'Varela Round', sans-serif;
 }
 
 img {
@@ -101,6 +103,11 @@ img {
 i {
   font-size: 1.999em;
 }
+
+/*I can't get the stupid thing to move over*/
+/*i~"bars" {
+  display: inline-block;
+}*/
 
 
 /*MEDIA QUERY FOR DESKTOP*/

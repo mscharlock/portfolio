@@ -15,5 +15,6 @@ var data = {
   ]}
 
 //Use handlebars to compile and append to html//
-var template = Handlebars.compile($('#quotes').html());
-$('#quotesHere').append(template(data));
+var template = $('#quoteTemplate').html()
+var compile = Handlebars.compile(template);
+$('#quotesHere').append(compile(data));

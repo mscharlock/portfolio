@@ -25,6 +25,7 @@ viewPage.liGo = function() {
     viewPage.hideSections();
     $('#' + $(this).data('goto')).css('display', 'initial');
     $('.template').hide();
+    $('.skills').hide();
   })
 }
 
