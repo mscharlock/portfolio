@@ -10,12 +10,12 @@ viewPage.hideSections = function() {
   $('.template').hide();
   $('.texture').fadeIn();
   $('.navTab').hide();
-  $('.skills').fadeIn();
+  // $('.skills').fadeIn();
 }
 
 viewPage.openNav = function() {
-  $('nav').on('click', function() {
-    $('.navTab').show()
+  $('#pickMe').on('click', function() {
+    $('.navTab').show();
   })}
 
 viewPage.liGo = function() {
@@ -25,7 +25,7 @@ viewPage.liGo = function() {
     viewPage.hideSections();
     $('#' + $(this).data('goto')).css('display', 'initial');
     $('.template').hide();
-    $('.skills').hide();
+    // $('.skills').hide();
   })
 }
 
