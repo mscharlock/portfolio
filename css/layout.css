@@ -1,14 +1,40 @@
 /*CLASSES*/
 .glass {
-  background-image: url('file:///C:/Users/Michelle/codefellows/301/portfolio/imgs/glass.jpg');
+  background-image: url('./imgs/sequins.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rocks {
+  background-image: url('./imgs/rocks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.code {
+  background-image: url('./imgs/code.jpg');
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+.water {
+  background-image: url('./imgs/water.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.circles {
+  background-image: url('./imgs/circles.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .skills {
   background-color: orange;
+  z-index: -9;
 }
 
-.portfolio {
+/*.portfolio {
   background-color: black;
 }
 
@@ -34,4 +60,4 @@
 
 .contact {
   background-color: orange;
-}
+}*/

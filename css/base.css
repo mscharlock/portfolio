@@ -2,44 +2,85 @@
 font-family: 'Special Elite', cursive;
 font-family: 'Varela Round', sans-serif;
 
+small, .font_small {font-size: 0.707em;}
+
 
 /*GLOBAL STYLING*/
+html {
+  font-size: 1em;
+}
+
 body {
   background-color: white;
+  text-align: center;
   font-family: 'Varela Round', sans-serif;
-  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: white;
+}
+
+/*HEADINGS*/
+/*h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
 }
 
 h1 {
   font-family: 'Special Elite', cursive;
-  font-size: 50px;
   display: inline;
   width: 40%;
   margin: 2%;
+  margin-top: 0;
+  font-size: 3.998em;
   line-height: 1.7em;
   background-color: #46bcfc;
 }
 
-nav {
-  display: block;
-  width: 20em;
-  height: 10em;
-  background-color: #46bcfc;
+h2 {
+  font-size: 2.827em;
 }
 
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}*/
+
+/*NAV STYLING*/
+/*nav {
+  display: block;
+  width: 20em;
+  height: 4em;
+  /*background-color: #46bcfc;*/
+  /*background-color: teal;
+  color: white;
+  text-decoration: none;
+}*/
+/*
 nav ul li {
-  width: 8em;
-  height: 10em;
-  background-color: #46bcfc;
+  /*background-color: #46bcfc;*/
+  /*display: teal;
   font-size: 200%;
   list-style: none;
   padding: 1em;
-}
+}*//*/
 
+/*OTHER TAGS*/
 section {
   padding: 1em;
-  background-color: black;
+  color: black;
+}
+
+footer {
+  background-color: teal;
   color: white;
+}
+
+p {
+  margin-bottom: 1.3em;
 }
 
 img {
@@ -47,11 +88,11 @@ img {
 }
 
 i {
-  font-size: 32px;
+  font-size: 1.999em;
 }
 
 
 /*MEDIA QUERY FOR DESKTOP*/
-@media only screen and (min-width:960px){
+/*@media only screen and (min-width:960px){
   /*styling TBD*/
-  });
+  /*});*/
