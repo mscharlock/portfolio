@@ -8,7 +8,7 @@ var viewPage = {};
 viewPage.hideSections = function() {
   $('section').hide();
   $('.template').hide();
-  $('.glass').fadeIn();
+  $('.texture').fadeIn();
   $('.navTab').hide();
   $('.skills').fadeIn();
 }
