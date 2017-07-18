@@ -9,5 +9,11 @@ const errorCallback = function(err) {
 }
 
 
-$.getJSON('projectsJson.json')
-  .then(successfulCallback, errorCallback);
+
+
+if (localStorage.rawProjects) {
+  JSON.parse(localStorage.rawProjects)
+} else {
+  $.getJSON('projectsJson.json')
+    .then(successfulCallback, errorCallback);
+}
