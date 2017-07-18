@@ -1,50 +1,116 @@
+/*TODO: remove this
+font-family: 'Special Elite', cursive;
+font-family: 'Varela Round', sans-serif;
+
+small, .font_small {font-size: 0.707em;}
+
+
 /*GLOBAL STYLING*/
+html {
+  font-size: 1em;
+}
+
 body {
   background-color: white;
-  font: sans-serif;
-  font-size: 13px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: black;
+}
+
+HEADINGS*/
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
 }
 
 h1 {
-  font-family: 'Zilla Slab', sans-serif;
-  font-size:500%;
-  display: inline;
-  width: 40%;
-  margin: 2%;
-  line-height: 1.7em;
-  background-color: #46bcfc;
+  font-family: 'Special Elite', cursive;
+  text-align: left;
+  width: 100%;
+  font-size: 3.998em;
+  margin: 0 auto;
+  line-height: 1.4em;
+  display: inline-block;
+  color: black;
+  text-shadow: 0.1em 0.06em 0.1em teal;
 }
 
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+/*NAV STYLING*/
 nav {
-  display: block;
-  width: 20em;
-  height: 10em;
-  background-color: #46bcfc;
+  color: black;
+  width: 100%;
+  text-align: center;
+  /*background-color: rgba(63, 65, 181, 0.74);*/
+  text-shadow: 0.08em 0.05em 0.4em black;
+}
+
+nav ul {
+  /*background-color: rgba(63, 65, 181, 0.74);*/
 }
 
 nav ul li {
-  width: 8em;
-  height: 10em;
-  background-color: #46bcfc;
-  font-size: 200%;
+  display: block;
+  text-align: left;
   list-style: none;
+  font-size: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*OTHER TAGS*/
+section {
   padding: 1em;
 }
 
-section {
-  padding: 1em;
-  background-color: black;
+footer {
+  background-color: teal;
   color: white;
+}
+
+p {
+  margin-bottom: 1.3em;
+  font-size: 1em;
+  font-family: 'Varela Round', sans-serif;
 }
 
 img {
   max-width: 100%;
 }
 
+i {
+  font-size: 1.999em;
+}
 
+/*I can't get the stupid thing to move over*/
+/*i~"bars" {
+  display: inline-block;
+}*/
 
 
 /*MEDIA QUERY FOR DESKTOP*/
-@media only screen and (min-width:960px){
+/*@media only screen and (min-width:960px){
   /*styling TBD*/
-  });
+  /*});*/
