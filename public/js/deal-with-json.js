@@ -8,9 +8,6 @@ const errorCallback = function(err) {
   console.error(err);
 }
 
-
-
-
 if (localStorage.rawProjects) {
   JSON.parse(localStorage.rawProjects)
 } else {
