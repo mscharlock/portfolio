@@ -1,0 +1,26 @@
+{
+  "name": "michelleportfolio",
+  "version": "1.0.0",
+  "description": "a portfolio for my projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mscharlock/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "michelle scharlock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mscharlock/portfolio/issues"
+  },
+  "homepage": "https://github.com/mscharlock/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
