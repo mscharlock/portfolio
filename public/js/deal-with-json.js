@@ -11,6 +11,6 @@ const errorCallback = function(err) {
 if (localStorage.rawProjects) {
   JSON.parse(localStorage.rawProjects)
 } else {
-  $.getJSON('projectsJson.json')
+  $.getJSON('projectsJson.json') //for some reason this isn't working??//
     .then(successfulCallback, errorCallback);
 }

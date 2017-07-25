@@ -34,6 +34,9 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
       <p>- {{{author}}}</p>}
     {{/each}}
   </script>
+  <script type="text/x-handlebars-template" id="funFactsTemplate">
+      <p>{{{text}}}</p>
+  </script>
 </head>
 
 <body>
@@ -131,6 +134,8 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
 
           <footer>
             <p> &copy; Michelle Scharlock, 2017 </p>
+            <p id="funFactsHere"></p>
+            <p>Michelle is<div id="age"></div></p>
           </footer>
 
           <!--Scripts-->
@@ -140,6 +145,7 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
           <script src="public/js/app.js"></script>
           <script src="public/js/hide-show.js"></script>
           <script src="public/js/deal-with-json.js"></script>
+          <script src="public/js/mapreducestuff.js"></script>
         </body>
 
         </html>
