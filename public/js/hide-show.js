@@ -4,6 +4,8 @@
 //Object to hold all of our methods//
 var viewPage = {};
 
+//enclosing everything in an iffe?
+(function() {
 //Some methods to hide/show//
 viewPage.hideSections = function() {
   $('section').hide();
@@ -34,3 +36,4 @@ $(document).ready(function(){
   viewPage.openNav();
   viewPage.liGo();
 })
+})();

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #fcefd6;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
   font-weight: 400;
@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family: 'Special Elite', cursive;
-  text-align: left;
+  text-align: center;
   width: 100%;
   font-size: 3.998em;
   margin: 0 auto;

@@ -30,4 +30,3 @@ var context = {
 var template = $('#project-template').html();
 var showProjects = Handlebars.compile(template);
 $('#dynamicHandlebarsInfo').append(showProjects(context));
-//is it not showing because of all of my wonky hide/show settings? Ask Brandon tomorrow. Because on-load they are briefly showing, then hiding???
