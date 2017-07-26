@@ -47,13 +47,14 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
       <nav>
         <i id="pickMe" class="fa fa-bars fa-lg" aria-hidden="true"></i>
         <ul>
-          <li class="navTab" data-goto="toSkills"><a href='#'> Skills</a></li>
-          <li class="navTab" data-goto="toPortfolio"><a href='#'>  Portfolio</a></li>
-          <li class="navTab" data-goto="toResume"><a href='#'>  Resume</a></li>
-          <li class="navTab" data-goto="toAccomps"><a href='#'>  Accomplishments</a></li>
-          <li class="navTab" data-goto="toLangs"><a href='#'>  Languages</a></li>
-          <li class="navTab" data-goto="toVol"><a href='#'>  Volunteering</a></li>
-          <li class="navTab" data-goto="toContact"><a href='#'>  Contact</a></li>
+          <!--Changed the hrefs to be routes-->
+          <li class="navTab" data-goto="toSkills"><a href='/skills'> Skills</a></li>
+          <li class="navTab" data-goto="toPortfolio"><a href='/portfolio'>  Portfolio</a></li>
+          <li class="navTab" data-goto="toResume"><a href='/resume'>  Resume</a></li>
+          <li class="navTab" data-goto="toAccomps"><a href='/accomplishments'>  Accomplishments</a></li>
+          <li class="navTab" data-goto="toLangs"><a href='/languages'>  Languages</a></li>
+          <li class="navTab" data-goto="toVol"><a href='/volunteering'>  Volunteering</a></li>
+          <li class="navTab" data-goto="toContact"><a href='/contact'>  Contact</a></li>
         </nav>
       </header>
 
@@ -134,18 +135,24 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
 
           <footer>
             <p> &copy; Michelle Scharlock, 2017 </p>
+            <!--TODO: get these to show up/work-->
             <p id="funFactsHere"></p>
             <p>Michelle is<div id="age"></div></p>
           </footer>
 
           <!--Scripts-->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!--External References-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+
+          <!--TODO: Sort these-->
           <script src="public/js/raw-articles.js"></script>
           <script src="public/js/quotes.js"></script>
           <script src="public/js/app.js"></script>
           <script src="public/js/hide-show.js"></script>
           <script src="public/js/deal-with-json.js"></script>
           <script src="public/js/mapreducestuff.js"></script>
+
         </body>
 
         </html>
