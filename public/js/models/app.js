@@ -26,6 +26,8 @@ var context = {
   ]
 };
 
+
+//Can I move the data somewhere else?//
 //Using handlebars to grab/compile/append
 var template = $('#project-template').html();
 var showProjects = Handlebars.compile(template);
