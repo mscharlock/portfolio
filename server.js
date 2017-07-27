@@ -5,7 +5,7 @@ let app = express();
 const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('/public'));
+app.use(express.static('./public'));
 //
 // const conString = 'postgres://postgres:1234@localhost:5432/'; // TODO: Don't forget to set your own conString
 // const client = new pg.Client(conString);
@@ -18,7 +18,7 @@ app.use(express.static('/public'));
 // });
 
 app.get('/', (request, response) => {
-  response.sendFile('./index.html', {root:'./'})
+  response.sendFile('index.html', {root:'./public'})
 });
 
 
