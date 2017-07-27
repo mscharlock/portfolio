@@ -31,9 +31,9 @@ var viewPage = {};
 //   })
 // }
 
-$(document).ready(function(){
-  viewPage.hideSections();
-  viewPage.openNav();
-  viewPage.liGo();
-})
+  $(document).ready(function(){
+    viewPage.hideSections();
+    viewPage.openNav();
+    viewPage.liGo();
+  })
 })();
