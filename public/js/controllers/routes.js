@@ -3,13 +3,9 @@ var app = app || {}; //if I use this, then I have to figure out what is attached
 
 //TODO:I gotta change this so the functionName handles the specific hide/show of the page//
 page('/', app.homeController.init);
-page('/portfolio', functionName);
-page('/resume', functionName);
-page('/accomplishments', functionName);
-page('/languages', functionName);
-page('/volunteering', functionName);
-page('contact', functionName);
-page('/skills', app.skillsController.init);
-page('/about', functionName);
+page('/portfolio', app.portfolioController.init);
+page('/accomplishments', app.accompsController.init);
+page('contact', app.contactController.init);
+// page('/skills', app.skillsController.init);
 
 page();

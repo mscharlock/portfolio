@@ -13,17 +13,19 @@ var funFacts = [
   }
 ]
 
+
 let trueFacts = funFacts.map(fact => {
-  if (funFacts.bool === true) {
-    $('#funFactsHere').show();
+  .then{if (funFacts.bool === true) {
+    $('#funFactsHere').fadeIn()};
   }
 })
 
 var template = $('#funFactsTemplate').html()
-var compile = Handlebars.compile(template);
-$('#funFactsHere').append(compile(trueFacts));
+var compiled = Handlebars.compile(template);
+$('#funFactsHere').append(compiled);
+
 
 let ageArr = [1988, 2017]
 let ageNow = ageArr.reduce((acc, curr) => curr - acc);
 
-$('#age').innerHTML(ageNow.val());
+$('#age').text(ageNow);
