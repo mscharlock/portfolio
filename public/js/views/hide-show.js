@@ -7,29 +7,29 @@ var viewPage = {};
 //enclosing everything in an iffe?
 (function() {
 //Some methods to hide/show//
-viewPage.hideSections = function() {
-  $('section').hide();
-  $('.template').hide();
-  $('.texture').fadeIn();
-  $('.navTab').hide();
-  // $('.skills').fadeIn();
-}
-
-viewPage.openNav = function() {
-  $('#pickMe').on('click', function() {
-    $('.navTab').show();
-  })}
-
-viewPage.liGo = function() {
-  $('ul').on('click', 'li', function(e) {
-    e.stopPropagation();
-    console.log($(this));
-    viewPage.hideSections();
-    $('#' + $(this).data('goto')).css('display', 'initial');
-    $('.template').hide();
-    // $('.skills').hide();
-  })
-}
+// viewPage.hideSections = function() {
+//   $('section').hide();
+//   $('.template').hide();
+//   $('.texture').fadeIn();
+//   $('.navTab').hide();
+//   // $('.skills').fadeIn();
+// }
+//
+// viewPage.openNav = function() {
+//   $('#pickMe').on('click', function() {
+//     $('.navTab').show();
+//   })}
+//
+// viewPage.liGo = function() {
+//   $('ul').on('click', 'li', function(e) {
+//     e.stopPropagation();
+//     console.log($(this));
+//     viewPage.hideSections();
+//     $('#' + $(this).data('goto')).css('display', 'initial');
+//     $('.template').hide();
+//     // $('.skills').hide();
+//   })
+// }
 
 $(document).ready(function(){
   viewPage.hideSections();
