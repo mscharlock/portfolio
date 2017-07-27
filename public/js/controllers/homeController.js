@@ -10,7 +10,8 @@ var app = app || {};
     // $('.texture').fadeIn();
     // $('.navTab').hide();
     // $('section').hide();
-    $('#toAccomps').hide();
+    $('.skills').siblings().hide();
+    $('.skills').show();
   }
 
   module.homeController = homeController;

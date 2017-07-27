@@ -15,8 +15,8 @@ var funFacts = [
 
 
 let trueFacts = funFacts.map(fact => {
-  .then{if (funFacts.bool === true) {
-    $('#funFactsHere').fadeIn()};
+  .then(if (bool === true) {
+    $('#funFactsHere').fadeIn());
   }
 })
 
