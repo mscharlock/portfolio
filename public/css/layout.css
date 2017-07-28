@@ -3,6 +3,10 @@
   color: white;
 }
 
+#gitHubStuff {
+  display: block;
+}
+
 .glass {
   background-image: url('../imgs/sequins.jpg');
   background-repeat: no-repeat;
