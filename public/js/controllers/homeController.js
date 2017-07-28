@@ -14,7 +14,10 @@ var app = app || {};
     $('#toContact').show();
     // $('.skills').show()
     console.log('wat');
+    repos.request(gitHubView);
   };
+
+
 
   module.homeController = homeController;
 })(app);

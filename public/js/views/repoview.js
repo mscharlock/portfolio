@@ -7,14 +7,14 @@ function Project(projectsJsonData) {
   this.inClass = projectsJsonData.inClass;
 }
 
-Project.prototype.toHtml() = function() {
-  //Using handlebars to grab/compile/append
-  var template = $('#project-template').text();
-  var showProjects = Handlebars.compile(template);
-  $('#dynamicHandlebarsInfo').append(showProjects);
+Project.prototype.compileStuff = function() {
+  // //Using handlebars to grab/compile/append
+  // var template = $('#project-template').text();
+  var showProjects = Handlebars.compile($('#project-template').text());
+  return showProjects(this);
 }
 
-$.getJSON('projectsJson.json', function(projectsJsonData) {
+$.getJSON('./projectsJson.json', function(projectsJsonData) {
   projectsJsonData.map(function (projectsJsonProject) {
     let projectInstance = new Project(projectsJsonData)
       $('#dynamicHandlebarsInfo').append(projectInstance);

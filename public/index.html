@@ -28,6 +28,14 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
     {{/each}}
   </script>
 
+  <script id="repo-template" type="text/x-handlebars-template">
+       <a href="{{html_url}}" target="_blank">
+         <h3>{{name}}</h3>
+       </a>
+       <p>Description: {{description}}</p>
+       <p>Created: {{created_at}}</p>
+   </script>
+
   <script type="text/x-handlebars-template" id="funFactsTemplate">
       <p>{{{text}}}</p>
   </script>
@@ -42,17 +50,14 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
         <i id="pickMe" class="fa fa-bars fa-lg" aria-hidden="true"></i>
         <ul>
           <!--Changed the hrefs to be routes-->
-          <li class="navTab" data-goto="toSkills"><a href='/skills'> Skills</a></li>
           <li class="navTab" data-goto="toPortfolio"><a href='/portfolio'>  Portfolio</a></li>
-          <li class="navTab" data-goto="toResume"><a href='/resume'>  Resume</a></li>
           <li class="navTab" data-goto="toAccomps"><a href='/accomplishments'>  Accomplishments</a></li>
-          <li class="navTab" data-goto="toLangs"><a href='/languages'>  Languages</a></li>
-          <li class="navTab" data-goto="toVol"><a href='/volunteering'>  Volunteering</a></li>
           <li class="navTab" data-goto="toContact"><a href='/contact'>  Contact</a></li>
         </nav>
       </header>
 
       <main>
+        <div id="gitHubStuff"></div>
         <!--Skills Section-->
         <!-- <section class="skills" data-hide="hideData">
           <h2>Skills</h2>
@@ -113,9 +118,11 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
             <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 
           <!--TODO: Sort these-->
+          <script src="./githubToken.js"></script>
           <script src="./js/models/app.js"></script>
 
           <script src="./js/views/repoView.js"></script>
+          <script src="./js/views/gitHubView.js"></script>
 
           <script src="./js/controllers/deal-with-json.js"></script>
           <script src="./js/controllers/accompsController.js"></script>
