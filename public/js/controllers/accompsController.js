@@ -5,10 +5,8 @@ var app = app || {};
   const accompsController = {};
 
   accompsController.init = function() {
-    // $('section').hide();
-    // $('.texture').fadeIn();
-    // $('.skills').hide();
-
+    $('#toContact').siblings().hide();
+    $('#toContact').show();
   }
 
   module.accompsController = accompsController;

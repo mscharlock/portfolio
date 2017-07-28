@@ -5,11 +5,8 @@ var app = app || {};
   const contactController = {};
 
   contactController.init = function() {
-    // $('section').hide();
-    // $('.template').hide();
-    // $('.texture').fadeIn();
-    // $('.navTab').hide();
-
+    $('#toContact').siblings().hide();
+    $('#toContact').show();
   }
 
   module.contactController = contactController;
