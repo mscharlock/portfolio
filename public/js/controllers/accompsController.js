@@ -5,8 +5,8 @@ var app = app || {};
   const accompsController = {};
 
   accompsController.init = function() {
-    $('#toContact').siblings().hide();
-    $('#toContact').show();
+    $('#toAccomps').siblings().hide();
+    $('#toAccomps').show();
   }
 
   module.accompsController = accompsController;
