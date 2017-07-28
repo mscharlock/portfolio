@@ -58,7 +58,7 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
 
       <main>
         <div id="gitHubStuff"></div>
-        
+
         <!--Portfolio Section-->
         <section id="toPortfolio" data-hide="hideData">
           <h2>Portfolio</h2>
@@ -68,11 +68,11 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
             <!--Accomplishments Section-->
             <section id="toAccomps" data-hide="hideData">
               <h3>Accomplishments</h3>
-              <p>I'm driven to acheive results - but don't take my word for it!<p>
+              <p>I'm driven to acheive results - but don't take my word for it!</p>
+              <p>"She brought our company from zero to hero" - Dr. Van Nostrand, Kramerica Industries</p>
+              <p>"Easy to work with, down to earth, overall, a great person" -Art Vandalay, Vandalay Industries </p>
+              <p>"Michelle is 1337" - Anonymous internet commenter
               <div id="quotesHere"></div>
-
-
-              <!--some kind of slider here? Or dynamically use jQ to animate/hide/etc? This will be some kind of press clippings/sizzle thing-->
             </section>
 
             <!--Contact Section-->
@@ -91,10 +91,10 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
             </section>
 
           </main>
+          </body>
 
           <footer>
             <p> &copy; Michelle Scharlock, 2017 </p>
-            <!--TODO: get these to show up/work-->
             <p id="funFactsHere"></p>
             <p>Michelle is<div id="age"></div></p>
           </footer>
@@ -104,13 +104,14 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 
-          <!--TODO: Sort these-->
+          <!--Models-->
           <script src="./githubToken.js"></script>
           <script src="./js/models/app.js"></script>
-
+          <!--Views-->
           <script src="./js/views/repoView.js"></script>
           <script src="./js/views/gitHubView.js"></script>
-
+          <!--Controllers-->
+          <script src="./js/models/mapreducestuff.js"></script>
           <script src="./js/controllers/deal-with-json.js"></script>
           <script src="./js/controllers/accompsController.js"></script>
           <script src="./js/controllers/portfolioController.js"></script>
@@ -118,6 +119,6 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
           <script src="./js/controllers/homeController.js"></script>
           <script src="./js/controllers/routes.js"></script>
 
-        </body>
+
 
         </html>

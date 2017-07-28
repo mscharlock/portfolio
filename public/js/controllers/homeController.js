@@ -12,7 +12,5 @@ var app = app || {};
     repos.request(gitHubView);
   };
 
-
-
   module.homeController = homeController;
 })(app);
