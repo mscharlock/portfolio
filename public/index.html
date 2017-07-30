@@ -50,6 +50,7 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
       <nav>
         <ul>
           <!--Changed the hrefs to be routes-->
+        <i class="fa fa-angle-double-down fa-3x down-arrow"></i>
           <li class="navTab" data-goto="toPortfolio"><a href='/portfolio'>  Portfolio</a></li>
           <li class="navTab" data-goto="toAccomps"><a href='/accomplishments'>  Accomplishments</a></li>
           <li class="navTab" data-goto="toContact"><a href='/contact'>  Contact</a></li>
@@ -109,13 +110,12 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
             <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 
           <!--Models-->
-          <script src="./js/models/app.js"></script>
+          <script src="./js/models/gitHubRepos.js"></script>
+          <script src="./js/models/projects.js"></script>
           <!--Views-->
-          <script src="./js/views/repoView.js"></script>
+          <script src="./js/views/projectView.js"></script>
           <script src="./js/views/gitHubView.js"></script>
           <!--Controllers-->
-          <script src="./js/models/mapreducestuff.js"></script>
-          <script src="./js/controllers/deal-with-json.js"></script>
           <script src="./js/controllers/accompsController.js"></script>
           <script src="./js/controllers/portfolioController.js"></script>
           <script src="./js/controllers/contactController.js"></script>

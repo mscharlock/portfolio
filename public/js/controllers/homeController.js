@@ -6,10 +6,13 @@ var app = app || {};
   const homeController = {};
 
   homeController.init = function() {
+    $('.navTab').hide();
     $('#toHome').siblings().hide();
     $('#toHome').show();
-    Project.prototype.compileStuff();
-    Project.fetchAll();
+    $('i').show()
+    $('i').on('click', function() {
+      $('.navTab').slideToggle();
+    })
   };
 
   module.homeController = homeController;

@@ -7,6 +7,10 @@ var app = app || {};
   contactController.init = function() {
     $('#toContact').siblings().hide();
     $('#toContact').show();
+    $('i').show()
+    $('i').on('click', function() {
+      $('.navTab').slideToggle();
+    })
   }
 
   module.contactController = contactController;

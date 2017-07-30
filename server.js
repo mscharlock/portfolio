@@ -14,8 +14,14 @@ function proxyGitHub(req, res) {
   }))(req, res);
 }
 
+//Get Requests for each of the routes//
 app.get('/github/*', proxyGitHub);
 
+app.get('/portfolio', (request, response) => response.sendFile('index.html', {root: './public'}));
+
+app.get('/accomplishments', (request, response) => response.sendFile('index.html', {root: './public'}));
+
+app.get('/contact', (request, response) => response.sendFile('index.html', {root: './public'}));
 
 app.get('/', (request, response) => {
   response.sendFile('index.html', {root:'./public'})
