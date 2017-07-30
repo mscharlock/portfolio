@@ -7,66 +7,28 @@
   display: block;
 }
 
-.glass {
-  background-image: url('../imgs/sequins.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.rocks {
-  background-image: url('../imgs/rocks.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .texture {
-  background-image: url('../imgs/texture.jpg');
-  /*background-repeat: no-repeat;*/
-  background-size: cover;
+  background-color: #0ec3c3;)
 }
 
-.water {
-  background-image: url('../imgs/water.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.circles {
-  background-image: url('../imgs/circles.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.skills {
+/*.skills {
   background-color: orange;
   z-index: -9;
-}
-
-
-/*.portfolio {
-  background-color: black;
-}
-
-.template {
-  display: none;
-}
-
-.resume {
-  background-color: orange;
-}
-
-.accomps {
-  background-color: black;
-}
-
-.langs {
-  background-color: orange;
-}
-
-.vol {
-  background-color: black;
-}
-
-.contact {
-  background-color: orange;
 }*/
+
+#toContact {
+  background-color: orange;
+  color: white;
+  text-shadow: 0.8px 0.8px 0.2px black;
+}
+
+#toContact a:link{
+  color: white;
+  text-decoration: none;
+  font-family: 'Varela Round', sans-serif;
+  text-shadow: 1px 1px 2px teal;
+}
+
+#toContact a:visited {
+  color: black;
+}

@@ -8,7 +8,7 @@ var app = app || {};
     $('#toPortfolio').siblings().hide();
     $('#toPortfolio').show();
     $('#gitHubStuff').show();
-    repos.request(gitHubView);
+    app.repos.request(gitHubView);
   }
 
   module.portfolioController = portfolioController;
