@@ -1,5 +1,6 @@
 //This file appends all of my projects on the DOM//
-'use strict'
+'use strict';
+
 var app = app || {};
 
 (function(module) {

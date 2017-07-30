@@ -1,4 +1,5 @@
-'use strict'
+'use strict';
+
 (function(module) {
 //Setting project view to an object on app so we can attach stuff to it//
   let projectView = {};
