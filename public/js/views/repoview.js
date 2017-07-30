@@ -14,10 +14,41 @@ Project.prototype.compileStuff = function() {
   return showProjects(this);
 }
 
-$.getJSON('./projectsJson.json', function(projectsJsonData) {
-  projectsJsonData.map(function (projectsJsonProject) {
-    let projectInstance = new Project(projectsJsonData)
-      $('#dynamicHandlebarsInfo').append(projectInstance);
-  })
-}
-)
+
+Project.fetchAll = function () {
+  $.getJSON('/projectsJson.json')
+    .then(console.log('req for json'))
+      .then(function(jsons) {
+        jsons.map(function (projectInst) {
+          var projectInst = new Project(jsons)
+        })
+        .then($('projectsList').append(projectInst))
+      })
+
+Project.fetchAll();
+//
+//
+// }$.getJSON('./projectsJson.json', function(projectsJsonData) {
+//   projectsJsonData.map(function (projectsJsonProject) {
+//     let projectInstance = new Project(projectsJsonData)
+//       $('#projectsList').append(projectInstance);
+//   })
+// }
+// )
+//
+//
+// Article.fetchAll = function() {
+//   if (localStorage.rawData) {
+//     Article.loadAll(JSON.parse(localStorage.rawData));
+//     articleView.initIndexPage();
+//   } else {
+//     $.getJSON('/data/hackerIpsum.json')
+//     .then(function(rawData) {
+//       Article.loadAll(rawData);
+//       localStorage.rawData = JSON.stringify(rawData);
+//       articleView.initIndexPage();
+//     }, function(err) {
+//       console.error(err);
+//     });
+//   }
+// }

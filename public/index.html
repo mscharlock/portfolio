@@ -19,6 +19,7 @@
   <!--Handlebars CDN and templates-->
   <script src="
 https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
+
   <script type="text/x-handlebars-template" id="project-template">
     {{#each projects}}
       <h3>{{title}}</h3>
@@ -36,10 +37,10 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
        <p>Created: {{created_at}}</p>
    </script>
 
-  <script type="text/x-handlebars-template" id="funFactsTemplate">
+  <!-- <script type="text/x-handlebars-template" id="funFactsTemplate">
       <p>{{{text}}}</p>
   </script>
-</head>
+</head> -->
 
 <body>
   <header>
@@ -47,22 +48,28 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
 
       <h1>Michelle Scharlock</h1>
       <nav>
-        <i id="pickMe" class="fa fa-bars fa-lg" aria-hidden="true"></i>
         <ul>
           <!--Changed the hrefs to be routes-->
           <li class="navTab" data-goto="toPortfolio"><a href='/portfolio'>  Portfolio</a></li>
           <li class="navTab" data-goto="toAccomps"><a href='/accomplishments'>  Accomplishments</a></li>
           <li class="navTab" data-goto="toContact"><a href='/contact'>  Contact</a></li>
+          <li class="navTab" data-goto="toHome"><a href='/'> Home</a></li>
         </nav>
       </header>
 
       <main>
-        <div id="gitHubStuff"></div>
+        <div id="toHome">
+          <p>Hello World!</p>
+          <p>I'm learning Javascript in Code Fellows' 301 class.</p>
+          <p>Here are some descriptions of recent projects...</p>
+          <div id=projectsList></div>
+        </div>
 
         <!--Portfolio Section-->
         <section id="toPortfolio" data-hide="hideData">
           <h2>Portfolio</h2>
-            <div id="dynamicHandlebarsInfo"></div>
+          <p>Check out my Github Repos!</p>
+            <div id="gitHubStuff"></div>
           </section>
 
             <!--Accomplishments Section-->
@@ -72,7 +79,6 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
               <p>"She brought our company from zero to hero" - Dr. Van Nostrand, Kramerica Industries</p>
               <p>"Easy to work with, down to earth, overall, a great person" -Art Vandalay, Vandalay Industries </p>
               <p>"Michelle is 1337" - Anonymous internet commenter
-              <div id="quotesHere"></div>
             </section>
 
             <!--Contact Section-->
@@ -95,8 +101,6 @@ https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.js"></script>
 
           <footer>
             <p> &copy; Michelle Scharlock, 2017 </p>
-            <p id="funFactsHere"></p>
-            <p>Michelle is<div id="age"></div></p>
           </footer>
 
           <!--Scripts-->

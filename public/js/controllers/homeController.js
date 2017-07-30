@@ -6,10 +6,10 @@ var app = app || {};
   const homeController = {};
 
   homeController.init = function() {
-    $('#toContact').siblings().hide();
-    $('#toContact').show();
-    $('#gitHubStuff').show();
-    repos.request(gitHubView);
+    $('#toHome').siblings().hide();
+    $('#toHome').show();
+    Project.prototype.compileStuff();
+    Project.fetchAll();
   };
 
   module.homeController = homeController;
