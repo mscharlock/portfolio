@@ -7,6 +7,8 @@ var app = app || {};
   portfolioController.init = function() {
     $('#toPortfolio').siblings().hide();
     $('#toPortfolio').show();
+    $('#gitHubStuff').show();
+    repos.request(gitHubView);
   }
 
   module.portfolioController = portfolioController;
